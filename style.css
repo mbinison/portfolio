@@ -22,7 +22,10 @@ body{
     align-items:center;
     padding:0 40px;
     border-bottom:1px solid #757b27;
-    background:#000;
+    background:black;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
 }
 
 .logo{
@@ -226,6 +229,54 @@ main{
     color:#f3d708;
 }
 
+#competences h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(182, 182, 27);
+    font-style: italic;
+}
+.skills{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+    margin-top:30px;
+}
+
+.skill-card{
+    text-align:center;
+}
+
+.skill-card img{
+    width:70px;
+    height:70px;
+    margin-bottom:15px;
+    transition: 4s ease;
+       animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px #d6d144);
+}
+
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-10px) scale(1.08);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+.skill-card img:hover{
+    transform: scale(1.15) rotate(8deg);
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #b8b623;
+}
+
+.skill-card h3{
+    margin-bottom:10px;
+}
+
 .projects{
     width:100%;
     padding:80px 8%;
@@ -254,6 +305,7 @@ main{
     overflow:hidden;
     transition:.35s;
     box-shadow:0 0 12px rgba(255,255,255,.08);
+    
 }
 
 
@@ -283,33 +335,6 @@ main{
     text-align:center;
     padding:0 20px 25px;
     line-height:1.6;
-}
-.contact {
-    padding: 100px 10%;
-    background: transparent;
-    color: #fff;
-    border-radius: 15px 15px;
-}
-
-.contact h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #c3ba13;
-    margin-bottom: 15px;
-}
-
-.contact p {
-    text-align: center;
-    color: #cbd5e1;
-    margin-bottom: 40px;
-    font-size: 1rem;
-}
-.contact-info {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
 }
 
 .info-grid {
@@ -355,7 +380,8 @@ main{
   }
 }
 
-  
+
+
 .contact-form {
     max-width: 600px;
     margin-left:auto;
