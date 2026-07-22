@@ -229,12 +229,19 @@ main{
     color:#f3d708;
 }
 
-#competences h2{
+html{
+    scroll-behavior: smooth;
+    
+    scroll-padding-top: 100px;
+}
+
+.compétences h2{
     text-align: center;
     font-size: 40px;
     color: rgb(182, 182, 27);
     font-style: italic;
 }
+
 .skills{
     display:grid;
     grid-template-columns:repeat(2,1fr);
@@ -284,10 +291,10 @@ main{
 
 
 .projects h2{
-    text-align:center;
-    font-size:40px;
-    color:#b8b623;
-    margin-bottom:50px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(182, 182, 27);
+    font-style: italic;
 }
 
 
@@ -337,9 +344,39 @@ main{
     line-height:1.6;
 }
 
+
+.àpropos{
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    background: #1b1b1b;
+    border: 2px solid #d6d144;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(214, 209, 68, 0.2);
+}
+
+.àpropos h2{
+    font-size: 2.3rem;
+    color: #d6d144;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.àpropos p{
+    color: #e5e5e5;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    font-style: italic;
+}
+
+.àpropos strong{
+    color: #d6d144;
+}
+
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   gap: 15px;
 }
 
@@ -347,7 +384,7 @@ main{
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #161616;
+  background: transparent;
   padding: 16px 20px;
   border-radius: 12px;
   border: 1px solid #2a2a2a;
@@ -381,7 +418,13 @@ main{
 }
 
 
+#contact h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(182, 182, 27);
+    font-style: italic;
 
+}
 .contact-form {
     max-width: 600px;
     margin-left:auto;
@@ -446,6 +489,37 @@ main{
     box-shadow: 0 0 20px rgb(241, 226, 4);
 }
 
+.info-contact {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+}
+
+.info-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #2a2a2a;
+  transition: 0.3s;
+}
+
+.info-contact.active {
+  border: 1px solid #d8df10;
+  box-shadow: 0 0 10px rgba(232, 236, 8, 0.929);
+}
+
+.info-contact img {
+  width: 24px;
+  height: 24px;
+}
+
+.info-contact span {
+  font-size: 15px;
+  color: #e0e0e0;
+}
 .icons{
     margin-top: 80px;
     display:flex;

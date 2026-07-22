@@ -23,11 +23,11 @@
         </label>
 
         <ul class="nav-links">
-            <li><a href="#" class="active">Accueil</a></li>
-            <li><a href="#">Compétences</a></li>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#accueil" class="active">Accueil</a></li>
+            <li><a href="#compétences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#à propos">A propos</a></li>
+            <li><a href="#contact">Contact</a></li>
 
             <a href="tel:+261381097172" class="phone">
                 <img src="assets/icons/phone-square.svg" alt="Téléphone">
@@ -37,7 +37,7 @@
 
     <main>
 
-        <header class="hero">
+        <div id="accueil" class="hero">
 
             <div class="hero-image">
                 <img src="images/profil.png" alt="photo de profil">
@@ -45,7 +45,7 @@
 
             <div class="hero-text">
 
-                <h3>Bonjour, je suis</h3>
+                <h3> <strong>Bienvenue</strong> dans mon portfolio, je suis</h3>
 
                 <h1>Rafidimanana <span>Mbinison.</span></h1>
 
@@ -61,11 +61,11 @@
 
             </div>
 
-        </header>
+        </div>
 
     </main>
 
-    <section id="competences">
+    <section id="compétences" class="compétences">
     <h2>Mes compétences</h2>
 
     <div class="skills">
@@ -87,14 +87,14 @@
 
         <div class="skill-card">
             <img src="assets/icons/GitHubb.svg" alt="GitHub">
-            <h3>Git & GitHub</h3>
+            <h3>GitHub</h3>
         </div>
 
     </div>
 </section>
 
 
-    <section class="projects">
+    <section id="projets" class="projects">
 
         <h2>Mes Projets</h2>
 
@@ -113,18 +113,18 @@
             </div>
         </div>
 
-        <div class="icons">
-            <img src="assets/icons/github.svg" alt="GitHub">
-            <img src="assets/icons/facebook.svg" alt="Facebook">
-            <img src="assets/icons/instagram.svg" alt="Instagram">
-            <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
-        </div>
-<section id="contact" class="contact">
+</section>
+
+
+  <div id="à propos" class="àpropos">
 
     <h2>A propos</h2>
+<p>Je suis <strong>Mbinison,</strong>
+    étudiant en première année de Licence (L1) en Informatique Générale à l’ENI de Toliara. Passionné par l’informatique et le développement web.</p>
+    </div>
 
 <div class="info-grid">
-
+  
     <div class="info-card">
         <img src="assets/icons/profil.svg" alt="Profil">
         <h3>MONJA Rafidimanana Mbinison</h3>
@@ -141,26 +141,16 @@
     </div>
 
     <div class="info-card">
-        <img src="assets/icons/email.svg" alt="Email">
-        <h3>ave7rombinison@gmail.com</h3>
-    </div>
-
-    <div class="info-card">
-        <img src="assets/icons/Telephone.svg" alt="Téléphone">
-        <h3>+261 38 10 971 72</h3>
-    </div>
-
-    <div class="info-card">
         <img src="assets/icons/Location.svg" alt="Localisation">
         <h3>Madagascar. Toliara</h3>
     </div>
 
 </div>
 
-</section>
+<section id="contact">
 
     <form class="contact-form">
-
+<h2>Contact</h2>
         <div class="input-box">
             <input type="text" placeholder="Votre nom" required>
         </div>
@@ -183,9 +173,25 @@
 
     </form>
 
+    <div class="info-contact">
+        <img src="assets/icons/email.svg" alt="Email">
+        <h3>ave7rombinison@gmail.com</h3>
+    </div>
+
+    <div class="info-contact">
+        <img src="assets/icons/Telephone.svg" alt="Téléphone">
+        <h3>+261 38 10 971 72</h3>
+    </div>
+
 </section>
 
-    </section>
+        <div class="icons">
+            <img src="assets/icons/github.svg" alt="GitHub">
+            <img src="assets/icons/facebook.svg" alt="Facebook">
+            <img src="assets/icons/instagram.svg" alt="Instagram">
+            <img src="assets/icons/whatsapp.svg" alt="WhatsApp">
+        </div>
+
     <footer>
         <p>© 2026 Rafidimanana Mbinison. Tous droits réservés.</p>
 
